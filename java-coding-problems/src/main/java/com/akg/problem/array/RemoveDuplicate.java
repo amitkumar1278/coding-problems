@@ -26,6 +26,7 @@ public class RemoveDuplicate {
 				{ 1, 2, 1, 1, 1, 1, 1 }, };
 
 		int[][] array2 = new int[][] { { 3, 1, 1, 4, 1, 4, 5 } };
+		int[] num = { 25, 52, 25, 65, 8, 96, 8, 25 };
 
 		/** Scenario 1 */
 		logger.info(" ======================== Scenario 1 ============================");
@@ -53,6 +54,16 @@ public class RemoveDuplicate {
 			long start2 = System.currentTimeMillis();
 			logger.info("Array with Duplicates       : " + Arrays.toString(input));
 			logger.info("After removing duplicates   : " + removeDuplicates3(input) + " took: "
+					+ (System.currentTimeMillis() - start2));
+		}
+
+		/** Scenario 3 */
+		logger.info(" ======================== Scenario 4 ============================");
+		int[][] array5 = new int[][] { { 3, 1, 1, 4, 1, 4, 5 } };
+		for (int[] input : array5) {
+			long start2 = System.currentTimeMillis();
+			logger.info("Array with Duplicates       : " + Arrays.toString(input));
+			logger.info("After removing duplicates   : " + removeDuplicates4(input) + " took: "
 					+ (System.currentTimeMillis() - start2));
 		}
 	}
@@ -130,6 +141,24 @@ public class RemoveDuplicate {
 		}
 
 		return filter;
+	}
+
+	public static int[] removeDuplicates4(int[] num) {
+
+		String s = "";
+
+		for (int i = 0; i < num.length; i++) {
+			if (!s.contains(String.valueOf(num[i])))
+				s += num[i] + ",";
+		}
+
+		String stringArray[] = s.split(",");
+		int[] uniqnum = new int[stringArray.length];
+
+		for (int i = 0; i < stringArray.length; i++)
+			uniqnum[i] = Integer.parseInt(stringArray[i]);
+
+		return uniqnum;
 	}
 
 }
