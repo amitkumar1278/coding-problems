@@ -26,4 +26,15 @@ Theta notification is used to signify the complexity in between the thresholds s
 
 
 =============================================================================
-    
+### Some helpful facts for time complexity:
+
+n < nlog(n)
+n^x < n^y if x < y
+n^x < c^n where c is a constant (polynomials will eventually grow slower than exponentials)
+log(n) < n
+c^n < n! < n^n where c is a constant
+
+#### normal precedence
+1 < logn < sqrt(n) < n < nlogn < n^2 < n^3 < … < 2^n < 3^n < … < n^n
+
+=============================================================================
