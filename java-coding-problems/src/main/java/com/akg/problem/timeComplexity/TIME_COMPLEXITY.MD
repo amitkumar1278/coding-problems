@@ -14,5 +14,16 @@
 
     See when we say asymptote, it means something that is tending to infinity. So if you put asymptotic input that is n tending to infinity, how the function will perform at that time is what time complexity is. That is also the worst case scenario or the Big-O notation. So that means if X is Asymptotically efficient, then it will perform better with larger inputs and has less Big-O notation as compared to Y.
 
+=============================================================================
 
+### difference between theta, big O, omega in time complexity
+
+Omega notation is used to signify the lower bound of the complexity, i.e. the complexity of an algorithm will never go below the threshold given by the omega notation. (Best Case Complexity)
+
+Big-O notation gives the upper bound, i.e. the complexity cannot go beyond the threshold of the Big-O notation. (Worst Case Complexity)
+
+Theta notification is used to signify the complexity in between the thresholds set by Omega and Big-O notations. (Average Case Complexity)
+
+
+=============================================================================
     
