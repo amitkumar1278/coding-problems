@@ -4,7 +4,6 @@
 package com.akg.problem.array;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 /**
