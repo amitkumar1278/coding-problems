@@ -184,6 +184,8 @@ public class MaxSumContiguousSubarray {
 	 * O(nlogn)  => similar to merge sort
 	 * 
 	 *  Divide and Conquer problem:
+	 *  
+	 *  another way: https://www.geeksforgeeks.org/maximum-subarray-sum-using-divide-and-conquer-algorithm/
 	 */
 	static int maximumSubArray_NLogN(int arr[], int n) {
 
