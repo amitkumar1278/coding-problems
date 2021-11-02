@@ -38,8 +38,8 @@ public class Anagram1 {
 			count[input1[i] - 'a']++;  /** get the exact position of character and increment the value in count array for characters in input1; */
 			count[input2[i] - 'a']--;  /** get the exact position of character and decrement the value in count array for characters in input2; */
 			
-//			System.out.println("1st ==>>"+input1[i]+" -- "+ (input1[i] - 'a'));
-//			System.out.println("1st ==>>"+input2[i]+" -- "+ (input2[i] - 'a'));
+			System.out.println("1st ==>>"+input1[i]+" -- "+ (input1[i] - 'a'));
+			System.out.println("1st ==>>"+input2[i]+" -- "+ (input2[i] - 'a'));
 		}
 
 		/** See if there is any non-zero value in count array */
